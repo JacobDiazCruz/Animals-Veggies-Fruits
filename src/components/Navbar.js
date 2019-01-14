@@ -7,7 +7,7 @@ class Navbar extends Component {
     render() {
       return(
         <Menu>
-          <NavLink exact to="/animals" className="menu-item">Animals</NavLink>
+          <NavLink exact to="/" className="menu-item">Animals</NavLink>
           <NavLink exact to="/fruitsveg"className="menu-item">Fruits & Veg</NavLink>
         </Menu>
       );
