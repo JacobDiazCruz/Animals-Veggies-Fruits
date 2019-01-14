@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2eacb;
+}
+
+/*home*/
+.home {
+  background: white !important;
+  z-index: 10;
+  position: absolute;
+}
+/*home end*/
+
+/*fonts*/
+@font-face {
+  src: url('fonts/proxima_nova.ttf');
+  font-family: 'nova reg';
+}
+
+@font-face {
+  src: url('fonts/Butler_Regular.otf');
+  font-family: 'butler reg';
+}
+
+@font-face {  
+  src: url('fonts/Butler_Light_Stencil.otf');
+  font-family: 'butler light';
+}
+
+@font-face{
+  src: url('fonts/Butler_Ultra_Light.otf');
+  font-family: 'butler';
+}
+/*fonts end*/
+
+/*animals page start*/
+.animals-section {
+  position: absolute;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 10% 20% 10% 10% 80%;
+  padding: 7em 3em;
+}
+
+#animals-h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding-top: 1em;
+  letter-spacing: 3px;
+}
+
+li {
+  list-style-type: none !important;
+  color: black;
+  font-family: 'nova reg';
+}
+
+img {
+  padding-bottom: 3.7em;
+}
+
+.title-cls,
+.noun-cls,
+.family-cls {
+  padding-bottom: 6.7em;
+}
+
+.title-cls {
+  font-weight: 600;
+}
+
+.desc-cls {
+  padding-bottom: 5.4em;
+}
+/*animals page end*/
+
+/*fruitsveg start*/
+.fruitsveg-section {
+  position: absolute;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 12% 12% 10% 80%;
+  padding: 8em 3em;
+}
+
+#fruitsveg-h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding-top: 1em;
+  letter-spacing: 3px;
+}
+
+.title-cls-2,
+.family-cls-2 {
+  padding-bottom: 6.7em;
+}
+
+.family-cls-2 {
+  padding-bottom: 6.8em;
+}
+
+.title-cls-2 {
+  font-weight: 600;
+}
+
+
+.desc-cls-2 {
+  padding-bottom: 5.4em;
+}
+/*fruitsveg end*/
+
+/*navbar start*/
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.menu-item {
+  font-size: 2em;
+  padding-bottom: 1em;
+  font-family: 'butler reg';
+  text-decoration: none;
+  color: brown;
+}
+
+#home-nav {
+  margin-top: 2em;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+.bm-menu {
+  background: #fff;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+.bm-item {
+  display: inline-block;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/*navbar end*/
+
+/* Add Animation */
+/* Modal Content (image) */
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
