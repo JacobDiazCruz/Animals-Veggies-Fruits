@@ -13,7 +13,7 @@ class Template extends Component {
         <React.Fragment>
           <Navbar/>
           <Switch>
-            <Route exact path="/animals" component={Animals}/>
+            <Route exact path="/" component={Animals}/>
             <Route exact path="/fruitsveg" component={FruitsVeg}/>
           </Switch>
         </React.Fragment>
