@@ -63,11 +63,6 @@ li {
 img {
   padding-bottom: 3.7em;
   cursor: pointer;
-  transition: 300ms;
-}
-
-img:hover {
-  opacity: 0.5
 }
 
 .title-cls,
